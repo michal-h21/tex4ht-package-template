@@ -1,0 +1,16 @@
+% tex4ht copyright
+
+\NewConfigure{hello}{1}
+\renewcommand\hello{\a:hello}
+
+\Hinput{packagename}
+
+\:CheckOption{html5}
+\if:Option
+\Configure{hello}{\typeout{hello html}}
+\fi
+
+\:CheckOption{ooffice}
+\if:Option
+\Configure{hello}{\typeout{hello ooffice}}
+\fi
